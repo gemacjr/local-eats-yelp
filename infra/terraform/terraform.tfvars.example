@@ -1,0 +1,12 @@
+name      = "yelp"
+region    = "us-east-1"
+image_tag = "latest"
+
+# Optional HTTPS + custom domain:
+# certificate_arn = "arn:aws:acm:us-east-1:123456789012:certificate/..."
+# app_domain      = "eats.example.com"
+
+# Production hardening:
+# db_instance_class  = "db.r7g.large"
+# db_multi_az        = true
+# single_nat_gateway = false

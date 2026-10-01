@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+:root {
+  --background: #faf8f5;
+  --surface: #ffffff;
+  --foreground: #1c1917;
+  --muted: #78716c;
+  --border: #e7e2dc;
+  --accent: #c8102e;
+  --accent-soft: #fdecee;
+  --star: #e8590c;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #141210;
+    --surface: #1e1b18;
+    --foreground: #f2efeb;
+    --muted: #a8a29e;
+    --border: #36312c;
+    --accent: #f03e56;
+    --accent-soft: #3a1a1f;
+    --star: #ff8a3d;
+  }
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+  --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
+  --color-star: var(--star);
+  --font-sans: var(--font-geist-sans);
+  --font-display: var(--font-fraunces);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+.input {
+  @apply w-full rounded-lg border border-border bg-surface px-3 py-2 text-sm outline-none transition focus:border-accent focus:ring-2 focus:ring-accent/20;
+}
+
+.btn {
+  @apply inline-flex items-center justify-center gap-2 rounded-lg bg-accent px-4 py-2 text-sm font-semibold text-white transition hover:brightness-110 disabled:cursor-not-allowed disabled:opacity-50;
+}
+
+.btn-ghost {
+  @apply inline-flex items-center justify-center gap-2 rounded-lg border border-border bg-surface px-4 py-2 text-sm font-medium transition hover:border-foreground/30;
+}
+
+.card {
+  @apply rounded-xl border border-border bg-surface;
+}

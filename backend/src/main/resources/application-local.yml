@@ -1,0 +1,5 @@
+# ./mvnw spring-boot:run -Dspring-boot.run.profiles=local
+# (with `docker compose up -d postgres localstack` running)
+app:
+  s3:
+    endpoint: http://localhost:4568

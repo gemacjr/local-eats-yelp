@@ -1,0 +1,42 @@
+# Java
+backend/target/
+# Node
+frontend/node_modules/
+frontend/.next/
+frontend/next-env.d.ts
+# Env / secrets
+.env
+*.tfvars
+!*.tfvars.example
+# Terraform
+infra/terraform/.terraform/
+infra/terraform/*.tfstate*
+infra/terraform/.terraform.lock.hcl
+# IDE / OS
+.idea/
+*.iml
+.DS_Store
+.remember/
+
+# Added before first GitHub push
+node_modules/
+.next/
+out/
+dist/
+build/
+target/
+target.nosync/
+.gradle/
+.terraform/
+*.tfstate
+*.tfstate.*
+.env.*
+!.env.example
+.vscode/
+.superpowers/
+.worktrees/
+.playwright-mcp/
+.venv/
+graphify-out/
+Pods/
+*.log
